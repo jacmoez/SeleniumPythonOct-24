@@ -154,12 +154,7 @@ class TestRenovationTest:
         time.sleep(1)
 
         #Have you collected your keys? *
-        # self.driver.find_element(By.XPATH, "/html/body/div/div/main/div/form[2]/div/div[2]/div/div[1]/div/fieldset[3]/div/button[2]").click()
-        # time.sleep(1)
-        #
-        # self.driver.find_element(By.CSS_SELECTOR, ".react-select__indicators.css-1wy0on6").click()
-        # time.sleep(2)
-        # self.driver.find_element(By.XPATH, "//*[@id='react-select-2-input']").send_keys(Keys.RETURN)
+    
 
         time.sleep(1)
         self.driver.find_element(By.XPATH, "/html/body/div/div/main/div/form[2]/div/div[2]/div/div[1]/div/fieldset[3]/div/button[1]").click()
@@ -186,7 +181,8 @@ class TestRenovationTest:
 
         #Submit Click
         self.driver.find_element(By.XPATH, "/html/body/div/div/main/div/div/div[2]/div/div[2]/button").click()
-        print("Test 5: ")
+        print("Test 5: ", "Step Two Complete!")
+        
 
 
 
@@ -199,6 +195,8 @@ class TestRenovationTest:
         self.test_sing_up()
         self.test_step_one()
         self.test_step_two()
+
+        
         time.sleep(10)
 
 TestRenovationTest().test_main()
